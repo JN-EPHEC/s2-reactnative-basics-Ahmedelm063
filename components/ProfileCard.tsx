@@ -16,9 +16,13 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <>
-      <Text>Replace this part with your soluce</Text>
-    </>
+    <View style={styles.card}>
+      <Image source={{uri: imageUr1}} style={style.image} />
+      <View style={style.textContainer}>
+        <Text style={style.name}>{name}</Text>
+        <Text style={style.jobTitle}>{jobTitle}</Text>
+      </View>
+    </View>
   );
 };
 
